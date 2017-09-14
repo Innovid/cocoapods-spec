@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'InnovidSource'
   s.version          = '1.0.1'
   s.summary          = 'Innovid TVOS library'
+  s.module_name      = 'InnovidFramework'
 
 
   s.description      = <<-DESC
