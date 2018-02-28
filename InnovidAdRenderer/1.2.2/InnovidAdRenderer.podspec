@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.dependency 'SWXMLHash', '~> 4.2.3'
 
   s.source = {
-    :http => "https://innovid.github.io/tvos-framework/release/InnovidAdRenderer.framework-#{s.version}.zip?cachebuster=2"
+    :http => "https://innovid.github.io/tvos-framework/release/InnovidAdRenderer.framework-#{s.version}.zip?cachebuster=#{DateTime.new().to_time.to_i}"
   }
   s.preserve_paths = "uploadDSYM", "run", "upload-symbols","InnovidAdRenderer.framework/*"
   s.source_files = 'InnovidAdRenderer.framework/Headers/*.h'
