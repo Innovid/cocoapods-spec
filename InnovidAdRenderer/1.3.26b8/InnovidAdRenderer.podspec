@@ -26,6 +26,10 @@ TODO: Add long description of the pod here.
   s.source = {
     :http => "https://s-video.innovid.com/common/tvos/releases/InnovidAdRenderer.framework-#{s.version}.zip?cachebuster=#{Time.now.to_i}"
   }
+  s.preserve_paths = "uploadDSYM", "run", "upload-symbols","InnovidAdRenderer.framework/*"
+  s.source_files = 'InnovidAdRenderer.framework/Headers/*.h'
+  s.public_header_files = 'InnovidAdRenderer.framework/Headers/*.h'
+  s.vendored_frameworks = 'InnovidAdRenderer.framework'
 
 end
 
